@@ -1,0 +1,1337 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "13"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult"
+    }, {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child"
+    }, {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old"
+    }, {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    }, {
+      "@id" : "_:genid24"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "13"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid43"
+    }, {
+      "@id" : "_:genid39"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid47"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "60"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "18"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid56"
+    }, {
+      "@id" : "_:genid54"
+    }, {
+      "@id" : "_:genid50"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid58"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "60"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid67"
+    }, {
+      "@id" : "_:genid65"
+    }, {
+      "@id" : "_:genid61"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid69"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#e"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "10"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid13"
+    }, {
+      "@id" : "_:genid9"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid78"
+    }, {
+      "@id" : "_:genid76"
+    }, {
+      "@id" : "_:genid72"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid80"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#e"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "10"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "19"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Breaking Bad ontology\n\nMade for UOC PEC2 by Cesar Huelamo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#A1A_Car_Wash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Albuquerque Police Department characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Actors that played a character in the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a character that's an adult person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates the age of a character at the start of the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series characters"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a character that's a child"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Civilian characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Crystal_Ship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Drug Enforcement Agency characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Dan_Wachsberger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "character member of Declan's crew"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series episode directors"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drama",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Characters that are involved in drug dealing during the show"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of seasons' episodes"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of series genres"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "character member of Gus' Fring crew"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "50"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "43"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "69"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F22298006&jump_to_nav=true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "character member of Heisenberg's crew"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Drug dealing characters without a clear allegiance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "character member of Jack's crew"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "55"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "23"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "37"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Characters that are part of law enforcement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "lawyer character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series recurrent locations"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A season that's longer than the average in terms of episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Los_pollos_hermanos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "member of the mexican cartel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "65"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a character that's an old person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Patty_Lin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "People involved in making the series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Peter_Gould",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series producers (producers, executive producers, supervising producers)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "48"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman's_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "List of series seasons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "13"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "13"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "13"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A season that is shorter than the average in terms of episodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Suspense",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a character that's a teenager"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tim_Roberts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "25"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tragedy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "50"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://bioportal.bioontology.org/ontologies/SNOMEDCT?p=classes&conceptid=254637007"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White"
+  } ],
+  "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew"
+  }, {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#White_Famility_house",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series script writers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates in which episodes a character appears"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates the director of a particular episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates the amount of episodes a season has"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates what medical conditiona character is suffering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates by which character was another character killed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates which actor portrays a character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "indicates the writers of a particular episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#e",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

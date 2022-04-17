@@ -1,0 +1,131 @@
+{
+  "@context" : {
+    "Age" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Teenager" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager"
+    },
+    "DEA" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA"
+    },
+    "killedBy" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director"
+    },
+    "writtenBy" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy",
+      "@type" : "@id"
+    },
+    "Short" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location"
+    },
+    "Independent" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode"
+    },
+    "Adult" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer"
+    },
+    "hasEpisodes" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Civilian" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian"
+    },
+    "Deceased" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor"
+    },
+    "APD" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Lawyer" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer"
+    },
+    "appearsIn" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn",
+      "@type" : "@id"
+    },
+    "Old" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old"
+    },
+    "hasMedicalCondition" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "portrayedBy" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy",
+      "@type" : "@id"
+    },
+    "directedBy" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy",
+      "@type" : "@id"
+    },
+    "Mexican_Cartel" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel"
+    },
+    "Declan_Crew" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew"
+    },
+    "Long" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long"
+    },
+    "Child" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child"
+    },
+    "Law_Enforcement" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Gus_Crew" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre"
+    },
+    "Jack_Crew" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew"
+    },
+    "Heisenberg_Crew" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season"
+    },
+    "Drug_Dealer" : {
+      "@id" : "http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer"
+    }
+  }
+}

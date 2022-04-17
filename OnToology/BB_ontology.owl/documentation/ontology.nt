@@ -1,0 +1,746 @@
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar> <http://www.w3.org/2000/01/rdf-schema#comment> "Breaking Bad ontology\n\nMade for UOC PEC2 by Cesar Huelamo"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates in which episodes a character appears"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the director of a particular episode"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates by which character was another character killed"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates which actor portrays a character"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the writers of a particular episode"@en .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the age of a character at the start of the series"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the amount of episodes a season has"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates what medical conditiona character is suffering"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD> <http://www.w3.org/2000/01/rdf-schema#comment> "Albuquerque Police Department characters"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Actors that played a character in the series"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult> <http://www.w3.org/2000/01/rdf-schema#comment> "a character that's an adult person"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Series characters"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child> <http://www.w3.org/2000/01/rdf-schema#comment> "a character that's a child"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> <http://www.w3.org/2000/01/rdf-schema#comment> "Civilian characters"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug Enforcement Agency characters"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "character member of Declan's crew"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Series episode directors"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters that are involved in drug dealing during the show"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "List of seasons' episodes"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "List of series genres"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "character member of Gus' Fring crew"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "character member of Heisenberg's crew"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug dealing characters without a clear allegiance"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "character member of Jack's crew"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters that are part of law enforcement"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer> <http://www.w3.org/2000/01/rdf-schema#comment> "lawyer character"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Series recurrent locations"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long> <http://www.w3.org/2000/01/rdf-schema#comment> "A season that's longer than the average in terms of episode"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel> <http://www.w3.org/2000/01/rdf-schema#comment> "member of the mexican cartel"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old> <http://www.w3.org/2000/01/rdf-schema#comment> "a character that's an old person"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "People involved in making the series"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "Series producers (producers, executive producers, supervising producers)"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "List of series seasons"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short> <http://www.w3.org/2000/01/rdf-schema#comment> "A season that is shorter than the average in terms of episodes"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager> <http://www.w3.org/2000/01/rdf-schema#comment> "a character that's a teenager"@en .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> <http://www.w3.org/2000/01/rdf-schema#comment> "Series script writers"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#A1A_Car_Wash
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#A1A_Car_Wash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#A1A_Car_Wash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Crystal_Ship
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Crystal_Ship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Crystal_Ship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Dan_Wachsberger
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Dan_Wachsberger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Dan_Wachsberger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Dan_Wachsberger> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drama
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "43"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "69"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition> "https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F22298006&jump_to_nav=true"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "37"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Los_pollos_hermanos
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Los_pollos_hermanos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Los_pollos_hermanos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "65"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Patty_Lin
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Patty_Lin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Patty_Lin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Patty_Lin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Peter_Gould
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Peter_Gould> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Peter_Gould> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Peter_Gould> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "48"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_1
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_1> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_2
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_2> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_3
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_3> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_4
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_4> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5A
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5A> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5B
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5B> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Suspense
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Suspense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Suspense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tim_Roberts
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tim_Roberts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tim_Roberts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tim_Roberts> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tragedy
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tragedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tragedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition> "https://bioportal.bioontology.org/ontologies/SNOMEDCT?p=classes&conceptid=254637007"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#White_Famility_house
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#White_Famility_house> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#White_Famility_house> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> .
+# 
+# http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman's_office
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman's_office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman's_office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid22 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#arguments> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#a> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#arguments> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "60"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#a> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#arguments> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#a> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid43 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid45 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid47 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid48 <http://www.w3.org/2003/11/swrl#body> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#arguments> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "60"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#a> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid54 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid56 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/2003/11/swrl#head> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid58 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid59 <http://www.w3.org/2003/11/swrl#body> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2003/11/swrl#arguments> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#e> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid65 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid67 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid59 <http://www.w3.org/2003/11/swrl#head> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid69 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid7 <http://www.w3.org/2003/11/swrl#body> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#arguments> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "19"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#a> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#arguments> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#a> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid17 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid7 <http://www.w3.org/2003/11/swrl#head> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid70 <http://www.w3.org/2003/11/swrl#body> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/2003/11/swrl#arguments> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#e> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid76 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid76 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid78 .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid78 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid70 <http://www.w3.org/2003/11/swrl#head> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid80 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

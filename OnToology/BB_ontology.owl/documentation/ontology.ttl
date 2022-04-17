@@ -1,0 +1,815 @@
+@prefix : <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#> .
+
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar> rdf:type owl:Ontology ;
+                                                                            rdfs:comment """Breaking Bad ontology
+
+Made for UOC PEC2 by Cesar Huelamo"""@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#appearsIn
+:appearsIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Episode ;
+           rdfs:comment "indicates in which episodes a character appears"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#directedBy
+:directedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Episode ;
+            rdfs:range :Director ;
+            rdfs:comment "indicates the director of a particular episode"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#killedBy
+:killedBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          rdfs:comment "indicates by which character was another character killed"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#portrayedBy
+:portrayedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Character ;
+             rdfs:range :Actor ;
+             rdfs:comment "indicates which actor portrays a character"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#writtenBy
+:writtenBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :Episode ;
+           rdfs:range :Writer ;
+           rdfs:comment "indicates the writers of a particular episode"@en .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:range [ rdf:type owl:Restriction ;
+                                   owl:onProperty :appearsIn ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Episode
+                                 ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Age
+:Age rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Character ;
+     rdfs:range xsd:integer ;
+     rdfs:comment "indicates the age of a character at the start of the series"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Deceased
+:Deceased rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Character ;
+          rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasEpisodes
+:hasEpisodes rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Season ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "indicates the amount of episodes a season has"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#hasMedicalCondition
+:hasMedicalCondition rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Character ;
+                     rdfs:range xsd:anyURI ;
+                     rdfs:comment "indicates what medical conditiona character is suffering"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#APD
+:APD rdf:type owl:Class ;
+     rdfs:subClassOf :Law_Enforcement ;
+     rdfs:comment "Albuquerque Police Department characters"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:comment "Actors that played a character in the series"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Adult
+:Adult rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "a character that's an adult person"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Character
+:Character rdf:type owl:Class ;
+           rdfs:comment "Series characters"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Child
+:Child rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "a character that's a child"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Civilian
+:Civilian rdf:type owl:Class ;
+          rdfs:subClassOf :Character ;
+          owl:disjointWith :Drug_Dealer ,
+                           :Law_Enforcement ;
+          rdfs:comment "Civilian characters"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#DEA
+:DEA rdf:type owl:Class ;
+     rdfs:subClassOf :Law_Enforcement ;
+     rdfs:comment "Drug Enforcement Agency characters"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan_Crew
+:Declan_Crew rdf:type owl:Class ;
+             rdfs:subClassOf :Drug_Dealer ;
+             owl:disjointWith :Independent ;
+             rdfs:comment "character member of Declan's crew"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "Series episode directors"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drug_Dealer
+:Drug_Dealer rdf:type owl:Class ;
+             rdfs:subClassOf :Character ;
+             rdfs:comment "Characters that are involved in drug dealing during the show"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:comment "List of seasons' episodes"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "List of series genres"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gus_Crew
+:Gus_Crew rdf:type owl:Class ;
+          rdfs:subClassOf :Drug_Dealer ;
+          owl:disjointWith :Independent ;
+          rdfs:comment "character member of Gus' Fring crew"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Heisenberg_Crew
+:Heisenberg_Crew rdf:type owl:Class ;
+                 rdfs:subClassOf :Drug_Dealer ;
+                 owl:disjointWith :Independent ;
+                 rdfs:comment "character member of Heisenberg's crew"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Independent
+:Independent rdf:type owl:Class ;
+             rdfs:subClassOf :Drug_Dealer ;
+             owl:disjointWith :Jack_Crew ,
+                              :Mexican_Cartel ;
+             rdfs:comment "Drug dealing characters without a clear allegiance"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Crew
+:Jack_Crew rdf:type owl:Class ;
+           rdfs:subClassOf :Drug_Dealer ;
+           rdfs:comment "character member of Jack's crew"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Law_Enforcement
+:Law_Enforcement rdf:type owl:Class ;
+                 rdfs:subClassOf :Character ;
+                 rdfs:comment "Characters that are part of law enforcement"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Lawyer
+:Lawyer rdf:type owl:Class ;
+        rdfs:subClassOf :Civilian ;
+        rdfs:comment "lawyer character"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Series recurrent locations"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Long
+:Long rdf:type owl:Class ;
+      rdfs:subClassOf :Season ;
+      rdfs:comment "A season that's longer than the average in terms of episode"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mexican_Cartel
+:Mexican_Cartel rdf:type owl:Class ;
+                rdfs:subClassOf :Drug_Dealer ;
+                rdfs:comment "member of the mexican cartel"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Old
+:Old rdf:type owl:Class ;
+     rdfs:subClassOf :Character ;
+     rdfs:comment "a character that's an old person"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "People involved in making the series"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "Series producers (producers, executive producers, supervising producers)"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season
+:Season rdf:type owl:Class ;
+        rdfs:comment "List of series seasons"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Short
+:Short rdf:type owl:Class ;
+       rdfs:subClassOf :Season ;
+       rdfs:comment "A season that is shorter than the average in terms of episodes"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Teenager
+:Teenager rdf:type owl:Class ;
+          rdfs:subClassOf :Character ;
+          rdfs:comment "a character that's a teenager"@en .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Writer
+:Writer rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:comment "Series script writers"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#A1A_Car_Wash
+:A1A_Car_Wash rdf:type owl:NamedIndividual ,
+                       :Location .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Aaron_Paul
+:Aaron_Paul rdf:type owl:NamedIndividual ,
+                     :Actor .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Abiquiu
+:Abiquiu rdf:type owl:NamedIndividual ,
+                  :Episode .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Brock_Cantillo
+:Brock_Cantillo rdf:type owl:NamedIndividual ,
+                         :Civilian ;
+                :appearsIn :Abiquiu ;
+                :Age 7 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Bryan_Cranston
+:Bryan_Cranston rdf:type owl:NamedIndividual ,
+                         :Actor ,
+                         :Director ,
+                         :Producer .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Buried
+:Buried rdf:type owl:NamedIndividual ,
+                 :Episode .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Crystal_Ship
+:Crystal_Ship rdf:type owl:NamedIndividual ,
+                       :Location .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Dan_Wachsberger
+:Dan_Wachsberger rdf:type owl:NamedIndividual ,
+                          :Lawyer ;
+                 :appearsIn :Gilding_Over_All .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Declan
+:Declan rdf:type owl:NamedIndividual ,
+                 :Declan_Crew ;
+        :appearsIn :Buried ;
+        :killedBy :Jack_Welker ;
+        :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Drama
+:Drama rdf:type owl:NamedIndividual ,
+                :Genre .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Giancarlo_Esposito
+:Giancarlo_Esposito rdf:type owl:NamedIndividual ,
+                             :Actor .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gilding_Over_All
+:Gilding_Over_All rdf:type owl:NamedIndividual ,
+                           :Episode .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Grilled
+:Grilled rdf:type owl:NamedIndividual ,
+                  :Episode .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Gustavo_Fring
+:Gustavo_Fring rdf:type owl:NamedIndividual ,
+                        :Gus_Crew ;
+               :appearsIn :Abiquiu ;
+               :killedBy :Hector_Salamanca ;
+               :portrayedBy :Giancarlo_Esposito ;
+               :Age 50 ;
+               :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hank_Schreader
+:Hank_Schreader rdf:type owl:NamedIndividual ,
+                         :DEA ;
+                :appearsIn :Pilot ;
+                :killedBy :Jack_Welker ;
+                :Age 43 ;
+                :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Hector_Salamanca
+:Hector_Salamanca rdf:type owl:NamedIndividual ,
+                           :Mexican_Cartel ;
+                  :appearsIn :Grilled ;
+                  :killedBy :Hector_Salamanca ;
+                  :Age 69 ;
+                  :Deceased "true"^^xsd:boolean ;
+                  :hasMedicalCondition "https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F22298006&jump_to_nav=true"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jack_Welker
+:Jack_Welker rdf:type owl:NamedIndividual ,
+                      :Jack_Crew ;
+             :appearsIn :Buried ;
+             :killedBy :Walter_White ;
+             :Age 55 ;
+             :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Pinkman
+:Jesse_Pinkman rdf:type owl:NamedIndividual ,
+                        :Gus_Crew ,
+                        :Heisenberg_Crew ;
+               :appearsIn :Pilot ;
+               :portrayedBy :Aaron_Paul ;
+               :Age 23 ;
+               :Deceased "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Jesse_Plemons
+:Jesse_Plemons rdf:type owl:NamedIndividual ,
+                        :Actor .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Krazy-8
+:Krazy-8 rdf:type owl:NamedIndividual ,
+                  :Independent ;
+         :appearsIn :Pilot ;
+         :killedBy :Walter_White ;
+         :Age 37 ;
+         :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Los_pollos_hermanos
+:Los_pollos_hermanos rdf:type owl:NamedIndividual ,
+                              :Location .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Mike_Ehrmantraut
+:Mike_Ehrmantraut rdf:type owl:NamedIndividual ,
+                           :Gus_Crew ;
+                  :appearsIn :Gilding_Over_All ;
+                  :killedBy :Walter_White ;
+                  :Age 65 ;
+                  :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Patty_Lin
+:Patty_Lin rdf:type owl:NamedIndividual ,
+                    :Producer ,
+                    :Writer .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Peter_Gould
+:Peter_Gould rdf:type owl:NamedIndividual ,
+                      :Producer ,
+                      :Writer .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Pilot
+:Pilot rdf:type owl:NamedIndividual ,
+                :Episode ;
+       :directedBy :Vince_Gilligan ;
+       :writtenBy :Vince_Gilligan .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman
+:Saul_Goodman rdf:type owl:NamedIndividual ,
+                       :Lawyer ;
+              :appearsIn :Buried ;
+              :Age 48 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_1
+:Season_1 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :hasEpisodes 7 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_2
+:Season_2 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :hasEpisodes 13 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_3
+:Season_3 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :hasEpisodes 13 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_4
+:Season_4 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :hasEpisodes 13 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5A
+:Season_5A rdf:type owl:NamedIndividual ,
+                    :Season ;
+           :hasEpisodes 8 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Season_5B
+:Season_5B rdf:type owl:NamedIndividual ,
+                    :Season ;
+           :hasEpisodes 8 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Steven_Gomez
+:Steven_Gomez rdf:type owl:NamedIndividual ,
+                       :DEA ;
+              :appearsIn :Pilot ;
+              :killedBy :Jack_Welker ;
+              :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Suspense
+:Suspense rdf:type owl:NamedIndividual ,
+                   :Genre .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tim_Roberts
+:Tim_Roberts rdf:type owl:NamedIndividual ,
+                      :APD ;
+             :appearsIn :Grilled .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Todd_Alquist
+:Todd_Alquist rdf:type owl:NamedIndividual ,
+                       :Heisenberg_Crew ,
+                       :Jack_Crew ;
+              :appearsIn :Buried ;
+              :portrayedBy :Jesse_Plemons ;
+              :Age 25 ;
+              :Deceased "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Tragedy
+:Tragedy rdf:type owl:NamedIndividual ,
+                  :Genre .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Vince_Gilligan
+:Vince_Gilligan rdf:type owl:NamedIndividual ,
+                         :Director ,
+                         :Producer ,
+                         :Writer .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_Junior
+:Walter_Junior rdf:type owl:NamedIndividual ,
+                        :Civilian ;
+               :appearsIn :Pilot ;
+               :Age 15 .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Walter_White
+:Walter_White rdf:type owl:NamedIndividual ,
+                       :Gus_Crew ,
+                       :Heisenberg_Crew ;
+              :appearsIn :Pilot ;
+              :killedBy :Walter_White ;
+              :portrayedBy :Bryan_Cranston ;
+              :Age 50 ;
+              :Deceased "true"^^xsd:boolean ;
+              :hasMedicalCondition "https://bioportal.bioontology.org/ontologies/SNOMEDCT?p=classes&conceptid=254637007"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#White_Famility_house
+:White_Famility_house rdf:type owl:NamedIndividual ,
+                               :Location .
+
+
+###  http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman's_office
+<http://www.semanticweb.org/sarek/ontologies/2022/3/rc_pec2_huelamo_cesar#Saul_Goodman's_office> rdf:type owl:NamedIndividual ,
+                                                                                                          :Location .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Adult
+                :Child
+                :Old
+                :Teenager
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Age ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 13 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Child ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Age ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 18 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#a> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 60 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Adult ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Age ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 60 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Old ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Season ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasEpisodes ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#e> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 10 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Long ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Age ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 13 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#a> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 19 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Teenager ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Season ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasEpisodes ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#e> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 10 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Short ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
